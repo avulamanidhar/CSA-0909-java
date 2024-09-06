@@ -1,0 +1,16 @@
+public class BinaryConversions {
+
+    public static void main(String[] args) {
+        String binary = "1011"; 
+        int decimal = binaryToDecimal(binary);
+        String octal = decimalToOctal(decimal);
+        System.out.println("Binary: " + binary);
+        System.out.println("Decimal: " + decimal);
+        System.out.println("Octal: " + octal);
+    }
+    private static int binaryToDecimal(String binary) {
+        return Integer.parseInt(binary, 2);
+    }
+    private static String decimalToOctal(int decimal) {
+        return Integer.toOctalString(decimal);
+    }
