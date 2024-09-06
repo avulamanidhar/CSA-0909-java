@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class R192224219{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the number:");
+        int decimal=sc.nextInt();
+        String binary=Integer.toBinaryString(decimal);
+        String octal=Integer.toOctalString(decimal);
+        System.out.println("binary:"+binary);
+        System.out.println("octal:"+octal);
+    }
+}
