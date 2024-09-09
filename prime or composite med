@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class R192224219{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        int Primecount=0,Compositecount=0;
+        System.out.print("enter the numbers(0ton)");
+        while(true){
+            int num = sc.nextInt();
+            if(num==0) break;
+            if(num>1){
+                boolean Prime=true;
+                for(int i=2;i<=num/2;i++){
+                    if(num%2==0){
+                        Prime=false;
+                        break;
+                    }
+                }
+                if(Prime)Primecount++;
+                else Compositecount++;
+            }
+            }
+            System.out.println("primes:"+Primecount+"composite:"+Compositecount);
+            sc.close();
+        }
+    }
