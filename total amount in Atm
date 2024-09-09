@@ -1,0 +1,19 @@
+public class R192224219{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        int d1=sc.nextInt();
+        int n1=sc.nextInt();
+        int d2=sc.nextInt();
+        int n2=sc.nextInt();
+        int d3=sc.nextInt();
+        int n3=sc.nextInt();
+        int d4=sc.nextInt();
+        int n4=sc.nextInt();
+        int t1=d1*n1;
+        int t2=d2*n2;
+        int t3=d3*n3;
+        int t4=d4*n4;
+        int total=t1+t2+t3+t4;
+        System.out.println("total amount in atm:"+total);
+    }
+}
