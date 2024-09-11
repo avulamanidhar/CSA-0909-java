@@ -1,0 +1,18 @@
+import java.time.LocalDate;
+import java.time.DayOfWeek;
+import java.util.Scanner;
+public class R192224219{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter a day:");
+        int day=sc.nextInt();
+        System.out.print("enter month:");
+        int month=sc.nextInt();
+        System.out.print("enter a year:");
+        int year=sc.nextInt();
+        LocalDate date=LocalDate.of(year,month,day);
+        DayOfWeek dayofweek=date.getDayOfWeek();
+        System.out.println("The day of the week is:"+dayofweek);
+        sc.close();
+    }
+}
