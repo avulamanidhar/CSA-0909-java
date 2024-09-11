@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class R192224219{
+    public static void main(String[]args){
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("enter the no of days:");
+        int totaldays=scanner.nextInt();
+        if(totaldays<0){
+            System.out.print("invalid input days cant be in negative:");
+        }else{
+            int years=totaldays/365;
+            int remainingdays=totaldays%365;
+            int weeks=remainingdays/7;
+            int days=remainingdays%7;
+            System.out.println("no of years:"+years);
+            System.out.println("No of weeks:"+weeks);
+            System.out.println("No of days:"+days);
+        }
+        scanner.close();
+    }
+}
