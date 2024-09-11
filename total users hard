@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class R192224219{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("total users :");
+        int totalusers=sc.nextInt();
+        System.out.print("enter total staff members:");
+        int staffmembers=sc.nextInt();
+        int nonteachingstaff=staffmembers/3;
+        int students=totalusers-(staffmembers+nonteachingstaff);
+        int nonteaching=totalusers-(staffmembers+students);
+        System.out.println("student users:"+students);
+        System.out.println("non teaching staff:"+nonteaching);
+        sc.close();
+    }
+}
